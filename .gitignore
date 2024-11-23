@@ -6,7 +6,7 @@ node_modules/
 .build/
 .vscode/extensions/**/out/
 extensions/**/dist/
-/out*/
+client/out*/
 /extensions/**/out/
 build/node_modules
 coverage/
