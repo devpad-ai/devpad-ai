@@ -4,7 +4,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TextDocument = exports.TokenType = exports.HTMLFormatConfiguration = exports.HTMLDocument = exports.LanguageService = exports.DocumentContext = exports.ClientCapabilities = exports.TextDocumentIdentifier = exports.SelectionRange = exports.DiagnosticSeverity = exports.ParameterInformation = exports.SignatureInformation = exports.WorkspaceEdit = exports.ColorPresentation = exports.ColorInformation = exports.Color = exports.TextEdit = exports.SymbolKind = exports.SymbolInformation = exports.SignatureHelp = exports.Range = exports.Position = exports.Location = exports.Hover = exports.FormattingOptions = exports.FoldingRangeKind = exports.FoldingRange = exports.DocumentLink = exports.DocumentHighlightKind = exports.DocumentHighlight = exports.Diagnostic = exports.Definition = exports.CompletionItemKind = exports.CompletionList = exports.CompletionItem = exports.WorkspaceFolder = void 0;
+exports.TextDocument = exports.TokenType = exports.ClientCapabilities = exports.TextDocumentIdentifier = exports.SelectionRange = exports.DiagnosticSeverity = exports.ParameterInformation = exports.SignatureInformation = exports.WorkspaceEdit = exports.ColorPresentation = exports.ColorInformation = exports.Color = exports.TextEdit = exports.SymbolKind = exports.SymbolInformation = exports.Range = exports.Position = exports.Location = exports.Hover = exports.FormattingOptions = exports.FoldingRangeKind = exports.FoldingRange = exports.DocumentLink = exports.DocumentHighlightKind = exports.DocumentHighlight = exports.Diagnostic = exports.CompletionItemKind = exports.CompletionList = exports.CompletionItem = exports.WorkspaceFolder = void 0;
 exports.isCompletionItemData = isCompletionItemData;
 exports.getLanguageModes = getLanguageModes;
 const vscode_css_languageservice_1 = require("vscode-css-languageservice");
@@ -19,7 +19,6 @@ Object.defineProperty(exports, "WorkspaceFolder", { enumerable: true, get: funct
 Object.defineProperty(exports, "CompletionItem", { enumerable: true, get: function () { return vscode_languageserver_1.CompletionItem; } });
 Object.defineProperty(exports, "CompletionList", { enumerable: true, get: function () { return vscode_languageserver_1.CompletionList; } });
 Object.defineProperty(exports, "CompletionItemKind", { enumerable: true, get: function () { return vscode_languageserver_1.CompletionItemKind; } });
-Object.defineProperty(exports, "Definition", { enumerable: true, get: function () { return vscode_languageserver_1.Definition; } });
 Object.defineProperty(exports, "Diagnostic", { enumerable: true, get: function () { return vscode_languageserver_1.Diagnostic; } });
 Object.defineProperty(exports, "DocumentHighlight", { enumerable: true, get: function () { return vscode_languageserver_1.DocumentHighlight; } });
 Object.defineProperty(exports, "DocumentHighlightKind", { enumerable: true, get: function () { return vscode_languageserver_1.DocumentHighlightKind; } });
@@ -31,7 +30,6 @@ Object.defineProperty(exports, "Hover", { enumerable: true, get: function () { r
 Object.defineProperty(exports, "Location", { enumerable: true, get: function () { return vscode_languageserver_1.Location; } });
 Object.defineProperty(exports, "Position", { enumerable: true, get: function () { return vscode_languageserver_1.Position; } });
 Object.defineProperty(exports, "Range", { enumerable: true, get: function () { return vscode_languageserver_1.Range; } });
-Object.defineProperty(exports, "SignatureHelp", { enumerable: true, get: function () { return vscode_languageserver_1.SignatureHelp; } });
 Object.defineProperty(exports, "SymbolInformation", { enumerable: true, get: function () { return vscode_languageserver_1.SymbolInformation; } });
 Object.defineProperty(exports, "SymbolKind", { enumerable: true, get: function () { return vscode_languageserver_1.SymbolKind; } });
 Object.defineProperty(exports, "TextEdit", { enumerable: true, get: function () { return vscode_languageserver_1.TextEdit; } });
@@ -46,10 +44,6 @@ Object.defineProperty(exports, "SelectionRange", { enumerable: true, get: functi
 Object.defineProperty(exports, "TextDocumentIdentifier", { enumerable: true, get: function () { return vscode_languageserver_1.TextDocumentIdentifier; } });
 var vscode_html_languageservice_2 = require("vscode-html-languageservice");
 Object.defineProperty(exports, "ClientCapabilities", { enumerable: true, get: function () { return vscode_html_languageservice_2.ClientCapabilities; } });
-Object.defineProperty(exports, "DocumentContext", { enumerable: true, get: function () { return vscode_html_languageservice_2.DocumentContext; } });
-Object.defineProperty(exports, "LanguageService", { enumerable: true, get: function () { return vscode_html_languageservice_2.LanguageService; } });
-Object.defineProperty(exports, "HTMLDocument", { enumerable: true, get: function () { return vscode_html_languageservice_2.HTMLDocument; } });
-Object.defineProperty(exports, "HTMLFormatConfiguration", { enumerable: true, get: function () { return vscode_html_languageservice_2.HTMLFormatConfiguration; } });
 Object.defineProperty(exports, "TokenType", { enumerable: true, get: function () { return vscode_html_languageservice_2.TokenType; } });
 var vscode_languageserver_textdocument_1 = require("vscode-languageserver-textdocument");
 Object.defineProperty(exports, "TextDocument", { enumerable: true, get: function () { return vscode_languageserver_textdocument_1.TextDocument; } });

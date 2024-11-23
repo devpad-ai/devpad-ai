@@ -128,14 +128,14 @@ class JSONCompletionItemProvider {
     isLast(scanner, offset) {
         scanner.setPosition(offset);
         let nextToken = scanner.scan();
-        if (nextToken === jsonc_parser_1.SyntaxKind.StringLiteral && scanner.getTokenError() === jsonc_parser_1.ScanError.UnexpectedEndOfString) {
+        if (nextToken === 10 /* SyntaxKind.StringLiteral */ && scanner.getTokenError() === 2 /* ScanError.UnexpectedEndOfString */) {
             nextToken = scanner.scan();
         }
-        return nextToken === jsonc_parser_1.SyntaxKind.CloseBraceToken || nextToken === jsonc_parser_1.SyntaxKind.EOF;
+        return nextToken === 2 /* SyntaxKind.CloseBraceToken */ || nextToken === 17 /* SyntaxKind.EOF */;
     }
     hasColonAfter(scanner, offset) {
         scanner.setPosition(offset);
-        return scanner.scan() === jsonc_parser_1.SyntaxKind.ColonToken;
+        return scanner.scan() === 6 /* SyntaxKind.ColonToken */;
     }
 }
 exports.JSONCompletionItemProvider = JSONCompletionItemProvider;
