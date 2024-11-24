@@ -1,0 +1,21 @@
+{
+  "name": "devpad-theme",
+  "displayName": "devpad-theme",
+  "description": "The default color theme for devpad",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Devpad Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Devpad Theme-color-theme.json"
+      }
+    ]
+  }
+}

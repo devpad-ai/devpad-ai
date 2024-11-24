@@ -542,7 +542,7 @@ class TypeScriptServiceClient extends dispose_1.Disposable {
                     }
                 }
             }
-            else if (['vscode-insiders', 'code-oss'].includes(vscode.env.uriScheme)) {
+            else if (['vscode-insiders', 'devpad'].includes(vscode.env.uriScheme)) {
                 // Prompt after a single restart
                 this.numberRestarts = 0;
                 if (!this._isPromptingAfterCrash) {

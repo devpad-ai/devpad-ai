@@ -161,7 +161,7 @@ suite('getFlows', () => {
             ]
         },
         {
-            label: 'Code - OSS. Local filesystem. GitHub.com',
+            label: 'devpad. Local filesystem. GitHub.com',
             query: {
                 extensionHost: 2 /* ExtensionHost.Local */,
                 isSupportedClient: false,
@@ -174,7 +174,7 @@ suite('getFlows', () => {
             ]
         },
         {
-            label: 'Code - OSS. Local filesystem. GitHub Hosted Enterprise',
+            label: 'devpad. Local filesystem. GitHub Hosted Enterprise',
             query: {
                 extensionHost: 2 /* ExtensionHost.Local */,
                 isSupportedClient: false,
@@ -187,7 +187,7 @@ suite('getFlows', () => {
             ]
         },
         {
-            label: 'Code - OSS. Local filesystem. GitHub Enterprise Server',
+            label: 'devpad. Local filesystem. GitHub Enterprise Server',
             query: {
                 extensionHost: 2 /* ExtensionHost.Local */,
                 isSupportedClient: false,
