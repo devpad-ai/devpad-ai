@@ -58,7 +58,7 @@ class ExperimentationTelemetry {
             case 'vscode-exploration':
                 targetPopulation = vscode_tas_client_1.TargetPopulation.Internal;
                 break;
-            case 'code-oss':
+            case 'devpad':
                 targetPopulation = vscode_tas_client_1.TargetPopulation.Team;
                 break;
             default:

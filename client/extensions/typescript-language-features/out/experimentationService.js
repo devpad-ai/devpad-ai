@@ -70,7 +70,7 @@ async function createTasExperimentationService(reporter, id, version, globalStat
         case 'vscode-exploration':
             targetPopulation = tas.TargetPopulation.Internal;
             break;
-        case 'code-oss':
+        case 'devpad':
             targetPopulation = tas.TargetPopulation.Team;
             break;
         default:
