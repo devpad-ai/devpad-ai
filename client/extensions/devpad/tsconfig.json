@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.base.json",
+	"exclude": ["lib", "components", "ui"],
+	"include": ["src"],
+	"compilerOptions": {
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"skipLibCheck": true
+	}
+}

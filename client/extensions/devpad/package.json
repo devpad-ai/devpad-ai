@@ -1,0 +1,80 @@
+{
+  "name": "devpad",
+  "displayName": "devpad",
+  "description": "Features for devpad",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "chat",
+          "title": "Chat",
+          "icon": "public/icons/chat.svg"
+        }
+      ]
+    },
+    "views": {
+      "chat": [
+        {
+          "type": "webview",
+          "id": "chats",
+          "name": "Recent Chats"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "npx tsc -p ./ && npx rollup -c && npx tailwindcss -o ui/out.css && node build/html.cjs",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "npx eslint src",
+    "format": "npx prettier --write .",
+    "test": "npx vscode-test"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-html": "^1.0.4",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-replace": "^6.0.1",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.13.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.1",
+    "rollup": "^4.27.4",
+    "rollup-plugin-ignore-import": "^1.3.2",
+    "rollup-plugin-multi-input": "^1.5.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tailwindcss": "^3.4.15",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul": "^1.1.1"
+  }
+}
